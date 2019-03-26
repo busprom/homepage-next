@@ -7,14 +7,6 @@
 .features {
   position: relative;
 
-  &__tabs {
-    margin-bottom: 100px;
-
-    @media (--mobile-viewport) {
-      display: none;
-    }
-  }
-
   &__content {
     min-height: 450px;
 
@@ -90,6 +82,14 @@
 .feature_block {
   display: flex;
   flex-flow: row nowrap;
+
+  & .features__tabs {
+    margin-bottom: 100px;
+
+    @media (--mobile-viewport) {
+      display: none;
+    }
+  }
 
   &__links {
     flex: 0 0 370px;
